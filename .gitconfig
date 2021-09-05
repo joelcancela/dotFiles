@@ -1,0 +1,21 @@
+[user]
+	email = joel.cancelavaz@gmail.com
+	name = Joel CANCELA VAZ
+[push]
+	autoSetupRemote = true
+	default = current
+[core]
+	autocrlf = input
+	editor = vim
+[pull]
+	default = current
+[difftool]
+    prompt = false
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --new-window --diff $LOCAL $REMOTE
+[alias]
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	stashSingle = stash --

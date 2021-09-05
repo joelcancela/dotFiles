@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
+  "final_space": true,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "template": "⚡",
+          "foreground": "#ffffff",
+          "background": "#ff0000",
+          "type": "root",
+          "style": "diamond"
+        },
+        {
+          "template": "🦊 {{ .UserName }}",
+          "foreground": "#ffffff",
+          "background": "#0087af",
+          "type": "session",
+          "style": "diamond"
+        },
+        {
+          "template": "💻 {{ .HostName }}",
+          "foreground": "#ffee00",
+          "powerline_symbol": "\ue0b0",
+          "background": "#ff0000",
+          "type": "session",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "style": "agnoster_short",
+            "max_depth": 2
+          },
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "background": "#585858",
+          "type": "path",
+          "style": "powerline"
+        },
+        {
+          "foreground": "#193549",
+          "powerline_symbol": "\ue0b0",
+          "background": "#95ffa4",
+          "type": "git",
+          "style": "powerline"
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "template": "{{ if .Error }}☢ {{ .Code }}{{ end }}",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b2",
+          "background": "#100e23",
+          "type": "status",
+          "style": "powerline",
+          "invert_powerline": true
+        },
+        {
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "template": "🕖 {{ .CurrentDate | date .Format }}",
+          "foreground": "#0087af",
+          "powerline_symbol": "\ue0b2",
+          "background": "#000000",
+          "type": "time",
+          "style": "powerline",
+          "invert_powerline": true
+        }
+      ]
+    }
+  ]
+}
