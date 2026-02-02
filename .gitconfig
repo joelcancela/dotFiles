@@ -6,7 +6,7 @@
 	default = current
 [core]
 	autocrlf = input
-	editor = vim
+	editor = 'C:/Program Files/Vim/vim91/vim.exe'
 [pull]
 	default = current
 [difftool]
