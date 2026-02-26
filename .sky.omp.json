@@ -30,6 +30,18 @@
           "style": "powerline"
         },
         {
+          "powerline_symbol": "",
+          "foreground": "#b48bbd",
+          "background": "#000000",
+          "options": {
+            "mapped_shell_names": {
+              "pwsh": "PS"
+            }
+          },
+          "type": "shell",
+          "style": "powerline"
+        },
+        {
           "properties": {
             "style": "agnoster_short",
             "max_depth": 2
