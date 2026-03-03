@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 3,
+  "version": 4,
   "final_space": true,
   "blocks": [
     {
@@ -15,47 +15,49 @@
           "style": "diamond"
         },
         {
-          "template": "🦊 {{ .UserName }}",
+          "template": "🦊 {{ .UserName }}",
           "foreground": "#ffffff",
-          "background": "#0087af",
+          "background": "#00b1ff",
           "type": "session",
           "style": "diamond"
         },
         {
-          "template": "💻 {{ .HostName }}",
-          "foreground": "#ffee00",
+          "template": "💻 {{ .HostName }}",
+          "foreground": "#00b1ff",
           "powerline_symbol": "\ue0b0",
-          "background": "#ff0000",
+          "background": "#f3e600",
           "type": "session",
           "style": "powerline"
         },
         {
-          "powerline_symbol": "",
-          "foreground": "#b48bbd",
-          "background": "#000000",
+          "template": ".{{ .Name }}",
+          "powerline_symbol": "",
+          "foreground": "#000000",
+          "background": "#f3e600",
           "options": {
             "mapped_shell_names": {
-              "pwsh": "PS"
+              "pwsh": "ps",
+              "bash": "sh"
             }
           },
           "type": "shell",
           "style": "powerline"
         },
         {
-          "properties": {
+          "options": {
             "style": "agnoster_short",
             "max_depth": 2
           },
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
-          "background": "#585858",
+          "background": "#373737",
           "type": "path",
           "style": "powerline"
         },
         {
-          "foreground": "#193549",
+          "foreground": "#00b1ff",
           "powerline_symbol": "\ue0b0",
-          "background": "#95ffa4",
+          "background": "#f3e600",
           "type": "git",
           "style": "powerline"
         }
@@ -66,25 +68,23 @@
       "alignment": "right",
       "segments": [
         {
-          "template": "{{ if .Error }}☢ {{ .Code }}{{ end }}",
+          "template": "{{ if .Error }}☢  {{ .Code }}{{ end }}",
           "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b2",
-          "background": "#100e23",
+          "leading_diamond": "",
+          "background": "#373737",
           "type": "status",
-          "style": "powerline",
-          "invert_powerline": true
+          "style": "diamond"
         },
         {
-          "properties": {
+          "options": {
             "time_format": "15:04:05"
           },
-          "template": "🕖 {{ .CurrentDate | date .Format }}",
-          "foreground": "#0087af",
-          "powerline_symbol": "\ue0b2",
+          "template": "🕖 {{ .CurrentDate | date .Format }}",
+          "foreground": "#00b1ff",
+          "leading_diamond": "",
           "background": "#000000",
           "type": "time",
-          "style": "powerline",
-          "invert_powerline": true
+          "style": "diamond"
         }
       ]
     }
