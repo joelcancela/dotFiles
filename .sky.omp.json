@@ -16,14 +16,14 @@
         },
         {
           "template": "🦊 {{ .UserName }}",
-          "foreground": "#ffffff",
+          "foreground": "#2F3F38",
           "background": "#00b1ff",
           "type": "session",
           "style": "diamond"
         },
         {
           "template": "💻 {{ .HostName }}",
-          "foreground": "#00b1ff",
+          "foreground": "#00676F",
           "powerline_symbol": "\ue0b0",
           "background": "#f3e600",
           "type": "session",
@@ -55,7 +55,7 @@
           "style": "powerline"
         },
         {
-          "foreground": "#00b1ff",
+          "foreground": "#00676F",
           "powerline_symbol": "\ue0b0",
           "background": "#f3e600",
           "type": "git",
