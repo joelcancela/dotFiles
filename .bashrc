@@ -30,4 +30,4 @@ fi
 # Prompt
 PS1='[\u@\h \W]\$ '
 ## oh-my-posh override
-eval "$(oh-my-posh init bash --config '~/.sky.omp.json')"
+eval "$(oh-my-posh init bash --config ~/.sky.omp.json)"
