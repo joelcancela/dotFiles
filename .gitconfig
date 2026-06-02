@@ -9,6 +9,7 @@
 	editor = 'C:/Program Files/Vim/vim91/vim.exe'
 [pull]
 	default = current
+	rebase = true
 [difftool]
     prompt = false
 [diff]
